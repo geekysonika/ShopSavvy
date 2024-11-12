@@ -1,0 +1,59 @@
+.categories {
+    display: flex;
+    height: 80vh;
+    gap: 3px;
+    margin: 5px;
+  
+    .col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    .col-l {
+      flex: 2;
+    }
+  
+    .row{
+      flex:1;
+      display: flex;
+      gap: 3px;
+      position: relative;
+      overflow: hidden;
+  
+      button{
+        position: absolute;
+        min-width: 100px;
+        width: fit-content;
+        height: 50px;
+        padding: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        color: black; 
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: background-color 0.3s ease, color 0.3s ease;  
+      }
+      button:hover {
+        background-color: rgb(177, 177, 212);  // Change to blue on hover
+        color: white;  // Change text color to white when hovered
+      }
+      button:active {
+        background-color: rgb(95, 95, 190);  // Darker blue when button is clicked
+        color: white;  // Keep the text white when clicked
+      }
+  
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
